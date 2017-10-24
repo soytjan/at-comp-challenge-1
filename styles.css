@@ -1,7 +1,7 @@
 body {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
-  color: #D3D3D3;
+  color: /*#aeaeae*/ #D3D3D3;
   font-size: 16px;
   margin: 0;
   box-sizing: border-box;
@@ -99,11 +99,11 @@ p {
 }
 
 .yellow {
-  background-color: #FFE66D;
+  background-color: #FFE877;
 }
 
 .turquoise {
-  background-color: #4ECDC4;
+  background-color: #60C4BD;
 }
 
 .red {
