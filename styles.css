@@ -3,13 +3,16 @@ body {
   font-weight: 400;
   color: #D3D3D3;
   font-size: 16px;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 h1 {
-  font-size: 2em;
-  font-weight: 700;
+  font-size: 1.5em;
+  font-weight: 800;
   line-height: 150%;
-  margin-bottom: 25px;
+  padding-left: 5%;
+  margin-bottom: 5%;
 }
 
 h2 {
@@ -19,39 +22,60 @@ h2 {
 p {
   font-size: 1em;
   line-height: 150%;
+  padding: 0 5%;
 }
 
 #picture-section {
-  margin: -2px;
-  height: 75vh;
-}
-
-.profile-pic {
+  margin: 0px;
+  height: 60vh;
+  background-image: url("images/girl.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.ellipsis {
+  position: absolute;
+  top: 0.5%;
+  right: 1.5%;
+}
+
+.arrow {
+  margin: 2%;
+}
 
 #box-section {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  margin: 0;
+  margin: -1px;
+  width: 100%;
 }
 
 .container {
   height: 100vh;
+  width: 100%;
 }
 
 .box {
   width: 50%;
   height: 50vw;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-self: center;
 }
 
 .name-card {
   width: 100%;
-  padding: 25px 15px;
+  /*padding: 10% 0;*/
   position: relative;
+  height: 70vw;
 }
 
 .name-card-container {
@@ -97,6 +121,10 @@ p {
   border-radius: 0;
 }
 
+.button-container {
+  padding-left: 5%;
+}
+
 .box-name {
   margin: auto;
   text-align: center;
@@ -111,15 +139,8 @@ p {
   margin-bottom: 10px;
 }
 
-.icon-container {
-  position: absolute;
-  margin: auto;
-  top: 50%;
-  transform: translate(0, -50%);
-}
-
 .icon-last {
-  width: 20%;
+  width: 15%;
   display: block;
   margin: auto;
 }
@@ -130,7 +151,71 @@ p {
   transform: translate(-50%, -50%);
 }
 
+@media screen and (min-width: 460px) {
+  #picture-section {
+    height: 70vh;
+  }
 
+  .name-card {
+    height: 50vw;
+  }
+}
+
+@media screen and (min-width: 650px) {
+  #picture-section {
+    height: 65vh;
+  }
+
+  .box {
+    width: 33.3%;
+    height: 40vw;
+  }
+
+  .name-card {
+    width: 66.6%;
+  }
+
+  .icon-last {
+    width: 30%;
+  }
+
+  .last-box {
+    width: 33.3%;
+    height: 40vw;
+  }
+}
+
+
+
+@media screen and (min-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  #picture-section {
+    width: 40%;
+    height: 100vh;
+  }
+
+  #box-section {
+    width: 60%;
+  }
+
+  .box {
+    width: 33.3%;
+    height: 33.4vh;
+  }
+
+  .name-card {
+    width: 66.6%;
+  }
+
+  .icon-last {
+    width: 30%;
+  }
+
+}
 
 
 
