@@ -1,6 +1,6 @@
 body {
   box-sizing: border-box;
-  color: #D3D3D3;
+  color: white;
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -67,7 +67,7 @@ p {
 .box-name {
   font-size: 1em;
   font-weight: 600;
-  margin: auto;
+  margin: 3% auto;
   text-align: center;
 }
 
@@ -82,6 +82,10 @@ p {
 
 .cream {
   background-color: #F7FFF7;
+}
+
+.gray {
+  color: #D3D3D3;
 }
 
 .green {
@@ -113,7 +117,7 @@ p {
 }
 
 .name-card {
-  height: 70vw;
+  height: 75vw;
   position: relative;
   width: 100%;
 }
@@ -146,6 +150,8 @@ p {
 .yellow {
   background-color: #FFE877;
 }
+
+
 
 /*Start Media Queries*/
 @media screen and (min-width: 460px) {
