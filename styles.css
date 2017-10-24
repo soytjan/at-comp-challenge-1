@@ -1,22 +1,18 @@
 body {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  color: /*#aeaeae*/ #D3D3D3;
-  font-size: 16px;
-  margin: 0;
   box-sizing: border-box;
+  color: #D3D3D3;
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
 }
 
 h1 {
   font-size: 1.5em;
-  font-weight: 800;
+  font-weight: 600;
   line-height: 150%;
+  margin-bottom: 4%;
   padding-left: 5%;
-  margin-bottom: 5%;
-}
-
-h2 {
-
 }
 
 p {
@@ -25,35 +21,58 @@ p {
   padding: 0 5%;
 }
 
-#picture-section {
-  margin: 0px;
-  height: 60vh;
-  background-image: url("images/girl.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.ellipsis {
-  position: absolute;
-  top: 0.5%;
-  right: 1.5%;
-}
-
+/*Picture Section*/
 .arrow {
   margin: 2%;
 }
 
+.ellipsis {
+  position: absolute;
+  right: 1.5%;
+  top: 2%;
+}
+
+#picture-section {
+  align-items: center;
+  background-image: url("images/girl.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  height: 60vh;
+  justify-content: space-between;
+  margin: 0px;
+  width: 100%;
+}
+
+/*Box Section*/
 #box-section {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   margin: -1px;
   width: 100%;
+}
+
+.box {
+  align-content: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vw;
+  justify-content: center;
+  width: 50%;
+}
+
+.box-name {
+  font-size: 1em;
+  font-weight: 600;
+  margin: auto;
+  text-align: center;
+}
+
+.button-container {
+  padding-left: 5%;
 }
 
 .container {
@@ -61,88 +80,19 @@ p {
   width: 100%;
 }
 
-.box {
-  width: 50%;
-  height: 50vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  align-self: center;
-}
-
-.name-card {
-  width: 100%;
-  /*padding: 10% 0;*/
-  position: relative;
-  height: 70vw;
-}
-
-.name-card-container {
-  position: absolute;
-  top: 50%;
-  transform: translate(0, -50%);
-  margin: auto;
-}
-
-.last-box {
-  width: 100%;
-  height: 30vw;
+.cream {
+  background-color: #F7FFF7;
 }
 
 .green {
   background-color: #1A535C;
 }
 
-.cream {
-  background-color: #F7FFF7;
-}
-
-.yellow {
-  background-color: #FFE877;
-}
-
-.turquoise {
-  background-color: #60C4BD;
-}
-
-.red {
-  background-color: #FF6B6B;
-}
-
-.rectangle-button {
-  border: 1px solid #D3D3D3;
-  background-color: transparent;
-  color: #D3D3D3;
-  font-size: 1em;
-  padding: 15px;
-  margin: 15px;
-  margin-left: 0;
-  border-radius: 0;
-}
-
-.button-container {
-  padding-left: 5%;
-}
-
-.box-name {
-  margin: auto;
-  text-align: center;
-  font-size: 1em;
-  font-weight: 700;
-}
-
 .icon {
-  width: 30%;
   display: block;
-  margin: auto;
   margin-bottom: 10px;
-}
-
-.icon-last {
-  width: 15%;
-  display: block;
   margin: auto;
+  width: 30%;
 }
 
 .icon-container-last {
@@ -151,28 +101,68 @@ p {
   transform: translate(-50%, -50%);
 }
 
+.icon-last {
+  display: block;
+  margin: auto;
+  width: 15%;
+}
+
+.last-box {
+  height: 30vw;
+  width: 100%;
+}
+
+.name-card {
+  height: 70vw;
+  position: relative;
+  width: 100%;
+}
+
+.name-card-container {
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+
+.red {
+  background-color: #FF6B6B;
+}
+
+.rectangle-button {
+  background-color: transparent;
+  border-radius: 0;
+  border: 2px solid #D3D3D3;
+  color: #D3D3D3;
+  font-size: 1em;
+  margin: 15px 15px 15px 0;
+  padding: 12px;
+}
+
+.turquoise {
+  background-color: #60C4BD;
+}
+
+.yellow {
+  background-color: #FFE877;
+}
+
+/*Start Media Queries*/
 @media screen and (min-width: 460px) {
+  .name-card {
+    height: 50vw;
+  }
+
   #picture-section {
     height: 70vh;
   }
 
-  .name-card {
-    height: 50vw;
-  }
 }
 
 @media screen and (min-width: 650px) {
-  #picture-section {
-    height: 65vh;
-  }
-
   .box {
-    width: 33.3%;
     height: 40vw;
-  }
-
-  .name-card {
-    width: 66.6%;
+    width: 33.3%;
   }
 
   .icon-last {
@@ -180,41 +170,46 @@ p {
   }
 
   .last-box {
-    width: 33.3%;
     height: 40vw;
-  }
-}
-
-
-
-@media screen and (min-width: 900px) {
-  .container {
-    display: flex;
-    flex-direction: row-reverse;
-  }
-
-  #picture-section {
-    width: 40%;
-    height: 100vh;
-  }
-
-  #box-section {
-    width: 60%;
-  }
-
-  .box {
     width: 33.3%;
-    height: 33.4vh;
   }
 
   .name-card {
     width: 66.6%;
   }
 
+  #picture-section {
+    height: 65vh;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  .box {
+    height: 33.4vh;
+    width: 33.3%;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
   .icon-last {
     width: 30%;
   }
 
+  .name-card {
+    width: 66.6%;
+  }
+
+  #box-section {
+    width: 60%;
+  }
+
+  #picture-section {
+    height: 100vh;
+    width: 40%;
+  }
 }
 
 
