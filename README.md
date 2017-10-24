@@ -15,6 +15,10 @@ Since we were able to change the color scheme, I decided to go with a turquoise 
 
 As far as the CSS goes, I used Flexbox to make the boxes stack properly when changing the screen width. I also used Flex within the boxes themselves to make sure that the icons stayed in the center and adapted to the layout. 
 
+## Credits
+
+The icons were taken from [Font Awesome](http://fontawesome.io/) and [Icons DB](http://www.iconsdb.com/). The stock photo was taken from [StockSnap.io](https://stocksnap.io/).
+
 ## Authors
 
 * Amanda Tjan
